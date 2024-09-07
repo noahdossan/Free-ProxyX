@@ -1,8 +1,5 @@
-# Updated for python 3
-
 import requests
 import os
-import time
 import sys
 
 # ANSI color codes
@@ -12,41 +9,6 @@ Grey = "\033[1;30m"
 Reset = "\033[0m"
 Red = "\033[1;31m"
 Purple = "\033[0;35m"
-
-# Display menu
-print("  # \033[1;34m[ 01 ] >> \033[1;36;40mAll")
-print("  # \033[1;34m[ 02 ] >> \033[1;36;40mUSA")
-print("  # \033[1;34m[ 03 ] >> \033[1;36;40mRussia")
-print("  # \033[1;34m[ 04 ] >> \033[1;36;40mUkraine")
-print("  # \033[1;34m[ 05 ] >> \033[1;36;40mIndia")
-print("  # \033[1;34m[ 06 ] >> \033[1;36;40mItaly")
-print("  # \033[1;34m[ 07 ] >> \033[1;36;40mCanada")
-print("  # \033[1;34m[ 08 ] >> \033[1;36;40mFrance")
-print("  # \033[1;34m[ 09 ] >> \033[1;36;40mThailand")
-print("  # \033[1;34m[ 10 ] >> \033[1;36;40mPoland")
-print("  # \033[1;34m[ 11 ] >> \033[1;36;40mNetherlands")
-print("  # \033[1;34m[ 12 ] >> \033[1;36;40mMexico")
-print("  # \033[1;34m[ 13 ] >> \033[1;36;40mKazakhstan")
-print("  # \033[1;34m[ 14 ] >> \033[1;36;40mIran")
-print("  # \033[1;34m[ 15 ] >> \033[1;36;40mEgypt")
-print("  # \033[1;34m[ 16 ] >> \033[1;36;40mHong Kong")
-print("  # \033[1;34m[ 17 ] >> \033[1;36;40mGermany")
-print("  # \033[1;34m[ 18 ] >> \033[1;36;40mVietnam")
-print("  # \033[1;34m[ 19 ] >> \033[1;36;40mHungary")
-print("  # \033[1;34m[ 20 ] >> \033[1;36;40mBrazil")
-print("  # \033[1;34m[ 21 ] >> \033[1;36;40mJapan")
-print("  # \033[1;34m[ 22 ] >> \033[1;36;40mCambodia")
-print("  # \033[1;34m[ 23 ] >> \033[1;36;40mChina")
-print("  # \033[1;34m[ 24 ] >> \033[1;36;40mChile")
-print('')
-print("  # \033[1;34m[ 25 ] >> \033[1;36;40mSSL PROXY")
-print("  # \033[1;34m[ 26 ] >> \033[1;36;40mSOCKS4 PROXY")
-print("  # \033[1;34m[ 27 ] >> \033[1;36;40mSOCKS5 PROXY")
-print("  # \033[1;34m[ 28 ] >> \033[1;36;40mUPDATE UTILITY")
-print("  # \033[1;34m[ 29 ] >> \033[1;36;40mEXIT UTILITY")
-
-# Get user input
-op = int(input("Options: "))
 
 # Dictionary to map options to URLs
 proxy_urls = {
@@ -79,16 +41,61 @@ proxy_urls = {
     27: "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=750&country=all"
 }
 
-if op in proxy_urls:
-    proxyDomain = proxy_urls[op]
-    system = requests.get(proxyDomain).text
-    print(system)
-elif op == 28:
-    print("Updating tool. Please wait a moment")
-    os.system("bash ProxyUpdater.sh")
-elif op == 29:
-    print("\033[1;31;40mQuitting Utility...")
-    sys.exit()
-else:
-    print("\033[1;31;40mInvalid input. Quitting...")
-    sys.exit()
+def main():
+    while True:
+        # Display menu
+        print("  # \033[1;34m[ 01 ] >> \033[1;36;40mAll")
+        print("  # \033[1;34m[ 02 ] >> \033[1;36;40mUSA")
+        print("  # \033[1;34m[ 03 ] >> \033[1;36;40mRussia")
+        print("  # \033[1;34m[ 04 ] >> \033[1;36;40mUkraine")
+        print("  # \033[1;34m[ 05 ] >> \033[1;36;40mIndia")
+        print("  # \033[1;34m[ 06 ] >> \033[1;36;40mItaly")
+        print("  # \033[1;34m[ 07 ] >> \033[1;36;40mCanada")
+        print("  # \033[1;34m[ 08 ] >> \033[1;36;40mFrance")
+        print("  # \033[1;34m[ 09 ] >> \033[1;36;40mThailand")
+        print("  # \033[1;34m[ 10 ] >> \033[1;36;40mPoland")
+        print("  # \033[1;34m[ 11 ] >> \033[1;36;40mNetherlands")
+        print("  # \033[1;34m[ 12 ] >> \033[1;36;40mMexico")
+        print("  # \033[1;34m[ 13 ] >> \033[1;36;40mKazakhstan")
+        print("  # \033[1;34m[ 14 ] >> \033[1;36;40mIran")
+        print("  # \033[1;34m[ 15 ] >> \033[1;36;40mEgypt")
+        print("  # \033[1;34m[ 16 ] >> \033[1;36;40mHong Kong")
+        print("  # \033[1;34m[ 17 ] >> \033[1;36;40mGermany")
+        print("  # \033[1;34m[ 18 ] >> \033[1;36;40mVietnam")
+        print("  # \033[1;34m[ 19 ] >> \033[1;36;40mHungary")
+        print("  # \033[1;34m[ 20 ] >> \033[1;36;40mBrazil")
+        print("  # \033[1;34m[ 21 ] >> \033[1;36;40mJapan")
+        print("  # \033[1;34m[ 22 ] >> \033[1;36;40mCambodia")
+        print("  # \033[1;34m[ 23 ] >> \033[1;36;40mChina")
+        print("  # \033[1;34m[ 24 ] >> \033[1;36;40mChile")
+        print('')
+        print("  # \033[1;34m[ 25 ] >> \033[1;36;40mSSL PROXY")
+        print("  # \033[1;34m[ 26 ] >> \033[1;36;40mSOCKS4 PROXY")
+        print("  # \033[1;34m[ 27 ] >> \033[1;36;40mSOCKS5 PROXY")
+        print("  # \033[1;34m[ 28 ] >> \033[1;36;40mUPDATE UTILITY")
+        print("  # \033[1;34m[ 29 ] >> \033[1;36;40mEXIT UTILITY")
+        
+        # Get user input
+        op = int(input("Options: "))
+
+        if op in proxy_urls:
+            try:
+                proxyDomain = proxy_urls[op]
+                response = requests.get(proxyDomain)
+                content = response.text
+                if any(word in content.lower() for word in ["error", "faulty", "gateway", "failed"]):
+                    content += Red + " !!!FAULTY!!!" + Reset
+                print(content)
+            except requests.RequestException as e:
+                print(f"{Red}Error fetching proxies: {e}{Reset}")
+        elif op == 28:
+            print("Updating tool. Please wait a moment")
+            os.system("bash ProxyUpdater.sh")
+        elif op == 29:
+            print(f"{Red}Quitting Utility...{Reset}")
+            sys.exit()
+        else:
+            print(f"{Red}Invalid input. Please try again.{Reset}")
+
+if __name__ == "__main__":
+    main()

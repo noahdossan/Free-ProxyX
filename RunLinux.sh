@@ -7,7 +7,6 @@ w="\033[0m"
 
 echo "Installing packages. Please wait..."
 echo "Installing for Linux..."
-echo "2"
 
 # Update and upgrade the system
 sudo apt-get update
@@ -31,24 +30,15 @@ source myenv/bin/activate
 
 # Install necessary Python packages within the virtual environment
 echo -e $b">"$w" installing modules: "$g"requests and bs4"$w
-pip install requests bs4
+pip3 install requests bs4
 
 # Navigate to the Free-Proxy directory and run the scripts
-chmod +x Free-Proxy
-cd ~/Free-Proxy/src
+chmod +x src
+cd src
 bash Free-Proxy.sh
 python3 menu.py
 
 # Deactivate the virtual environment after execution
 deactivate
 
-echo "Setup for Linux successful."
-echo "██████╗░░█████╗░███╗░░██╗███████╗"
-echo "██╔══██╗██╔══██╗████╗░██║██╔════╝"
-echo "██║░░██║██║░░██║██╔██╗██║█████╗░░"
-echo "██║░░██║██║░░██║██║╚████║██╔══╝░░"
-echo "██████╔╝╚█████╔╝██║░╚███║███████╗"
-echo "╚═════╝░░╚════╝░╚═╝░░╚══╝╚══════╝"
-echo "Forked by noahdossan"
-echo "Update on:"
-echo "Run command: bash FreeProxy.sh"
+echo "Thank you for using the FreeProxyX utility."

@@ -8,6 +8,9 @@ w="\033[0m"
 echo "Installing packages. Please wait..."
 echo "Installing for Termux..."
 
+# Ensure correct mirror is selected
+termux-change-repo
+
 # Update and upgrade the system
 pkg update -y
 pkg upgrade -y
@@ -16,13 +19,17 @@ pkg upgrade -y
 echo -e $b">"$w" installing modules: "$g"git"$w
 pkg install -y git
 
-# Install Python 3, venv, and pip
-echo -e $b">"$w" installing modules: "$g"python3 and venv"$w
-pkg install -y python python-venv python-pip
+# Install Python and Pip
+echo -e $b">"$w" installing modules: "$g"python and pip"$w
+pkg install -y python
+
+# Install virtualenv
+echo -e $b">"$w" installing module: "$g"virtualenv"$w
+pip install virtualenv
 
 # Create a virtual environment
 echo -e $b">"$w" creating a virtual environment"
-python3 -m venv myenv
+virtualenv myenv
 
 # Activate the virtual environment
 echo -e $b">"$w" activating the virtual environment"
@@ -36,7 +43,7 @@ pip install requests bs4
 chmod +x src
 cd src
 bash Free-Proxy.sh
-python3 menu.py
+python menu.py
 
 # Deactivate the virtual environment after execution
 deactivate

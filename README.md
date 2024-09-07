@@ -1,8 +1,6 @@
 # FreeProxyX
 A fork of FreeProxy that removes unneeded stuff, also updated for Python 3.11 [UNDER DEVELOPMENT]
 
-The dev of the original FreeProxy also looks very sketchy, so I'll be searching the codebase too.
-
 <p align="center">
 <a href="https://github.com/mishakorzik/Free-Proxy"><img title="Version" src="https://img.shields.io/badge/Version-1.6.3-yellow?style=for-the-badge&logo="></a>
 <a href="https://github.com/mishakorzik/Free-Proxy/blob/main/LICENSE"><img title="License" src="https://img.shields.io/badge/License-GNU-brightgreen?style=for-the-badge&logo=gnu"></a>
@@ -24,26 +22,22 @@ The dev of the original FreeProxy also looks very sketchy, so I'll be searching 
 ## Termux Installation
 
 * `pkg install git`
-* `git clone https://github.com/noahdossan/Free-Proxy`
-* `cd Free-Proxy`
-* `bash Setup.sh`
+* `git clone https://github.com/noahdossan/Free-ProxyX`
+* `cd Free-ProxyX`
+* `bash RunTermux.sh`
 
 ---
 ## Installing for linux
 
 * `sudo apt install git`
-* `git clone https://github.com/noahdossan/Free-Proxy` 
-* `cd Free-Proxy`
-* `sudo bash SetupLinux.sh`
+* `git clone https://github.com/noahdossan/Free-ProxyX` 
+* `cd Free-ProxyX`
+* `sudo bash RunLinux.sh`
 
 ---
-## Start Proxy Termux and Linux
+## Start Proxy
 
-#### Enter a command to start the proxy.
-
-* `bash FreeProxy.sh`
-
----
+After installation with the `sudo bash Run[System].sh` command it should automatically run.
 
 #### command for update tool.
 

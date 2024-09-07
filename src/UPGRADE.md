@@ -1,4 +1,11 @@
+## Versions from FreeProxyX
 
+### 1.0.0-indev
+Currently in development
+
+* `Removed unneeded sleep timers`
+
+## Versions from original FreeProxy
 ### verison 1.5
 Super upgrade.
 
@@ -46,4 +53,4 @@ Super upgrade.
 
 
 ### Report bugs
-###### by mishakorzhik: report bug: misakorzik528@gmail.com
+###### fork by noahdossan: please report bugs in the issue tracker

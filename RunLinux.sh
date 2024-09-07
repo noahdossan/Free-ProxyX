@@ -16,6 +16,8 @@ sudo apt-get upgrade -y
 echo -e $b">"$w" installing modules: "$g"git"$w
 sudo apt-get install -y git
 
+sudo apt-get install lolcat
+
 # Install Python 3, venv, and pipx
 echo -e $b">"$w" installing modules: "$g"python3 and venv"$w
 sudo apt-get install -y python3 python3-venv python3-pip pipx

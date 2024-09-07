@@ -15,6 +15,7 @@ termux-change-repo
 # Update and upgrade the system using apt-get
 echo -e $b">"$w" Updating and upgrading the system"
 apt-get update -y && apt-get upgrade -y
+apt-get install lolcat
 
 # Install git
 echo -e $b">"$w" Installing modules: "$g"git"$w

@@ -16,6 +16,7 @@ echo "Installing for Termux..."
 echo -e $b">"$w" Updating and upgrading the system"
 apt-get update -y && apt-get upgrade -y
 apt-get install lolcat
+pkg install ruby
 gem install lolcat
 pkg install lolcat
 

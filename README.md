@@ -1,6 +1,8 @@
 # FreeProxyX
 A fork of FreeProxy that removes unneeded stuff, also updated for Python 3.11 [UNDER DEVELOPMENT]
 
+The dev of the original FreeProxy also looks very sketchy, so I'll be searching the codebase too.
+
 <p align="center">
 <a href="https://github.com/mishakorzik/Free-Proxy"><img title="Version" src="https://img.shields.io/badge/Version-1.6.3-yellow?style=for-the-badge&logo="></a>
 <a href="https://github.com/mishakorzik/Free-Proxy/blob/main/LICENSE"><img title="License" src="https://img.shields.io/badge/License-GNU-brightgreen?style=for-the-badge&logo=gnu"></a>

@@ -85,7 +85,7 @@ if op in proxy_urls:
     print(system)
 elif op == 28:
     print("Updating tool. Please wait a moment")
-    os.system("cd src && bash ProxyUpdater.sh")
+    os.system("bash ProxyUpdater.sh")
 elif op == 29:
     print("\033[1;31;40mQuitting Utility...")
     sys.exit()

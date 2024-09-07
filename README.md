@@ -21,23 +21,20 @@ The dev of the original FreeProxy also looks very sketchy, so I'll be searching 
 </p>
 
 ---
-## Installing for termux
+## Termux Installation
 
 * `pkg install git`
-* `git clone https://github.com/mishakorzik/Free-Proxy`
+* `git clone https://github.com/noahdossan/Free-Proxy`
 * `cd Free-Proxy`
 * `bash Setup.sh`
-
-#### Everything is ready! Now we are waiting for everything to download!
- * `succes`
 
 ---
 ## Installing for linux
 
-* `pkg install git`
-* `git clone https://github.com/mishakorzik/Free-Proxy` 
+* `sudo apt install git`
+* `git clone https://github.com/noahdossan/Free-Proxy` 
 * `cd Free-Proxy`
-* `bash SetupLinux.sh`
+* `sudo bash SetupLinux.sh`
 
 ---
 ## Start Proxy Termux and Linux
@@ -47,10 +44,6 @@ The dev of the original FreeProxy also looks very sketchy, so I'll be searching 
 * `bash FreeProxy.sh`
 
 ---
-## Donate
-
-**If you want to donate, click on the button**
-<a href="https://www.buymeacoffee.com/misakorzik"><img title="Donate" src="https://img.shields.io/badge/Donate-FreeProxy-yellow?style=for-the-badge&logo=github"></a>
 
 #### command for update tool.
 
@@ -70,6 +63,5 @@ The dev of the original FreeProxy also looks very sketchy, so I'll be searching 
 <img width="49.0%" src="https://raw.githubusercontent.com/mishakorzik/mishakorzik.menu.io/master/img/IMG_20210522_110043.jpg"/>
 </p>
 
-###### By mishakorzhik: Report bug: developer.mishakorzhik@gmail.com
-
+###### fork by noahdossan: report bugs in the issue tracker
 

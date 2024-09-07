@@ -5,7 +5,13 @@ r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
 
-# Activate the virtual environment (assuming it's created in the setup script at ~/myenv)
+# Check if the virtual environment exists
+if [ ! -d "$HOME/myenv" ]; then
+    echo -e $r"Error: Virtual environment not found. Please run the setup script first."$w
+    exit 1
+fi
+
+# Activate the virtual environment
 source ~/myenv/bin/activate
 
 # Install lolcat using pip inside the virtual environment
@@ -18,8 +24,8 @@ gem install lolcat
 clear
 
 # Run the Free-Proxy script and Python menu inside the activated environment
-bash Free-Proxy.sh
-python3 menu.py
+bash src/Free-Proxy.sh
+python3 src/menu.py
 
 # Deactivate the virtual environment after execution
 deactivate
